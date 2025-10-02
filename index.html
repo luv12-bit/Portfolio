@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-luv</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3853f364bb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Luv.</span> <br />I'm From KIIT.</h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------------about---------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="myself.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"><span>About</span> <span>Me.</span></h1>
+            <p>
+              Hi, I’m Luv. I’m a web developer who loves creating modern,
+              user-friendly websites that bring ideas to life. <br />
+              Outside of coding, I love to travel. Exploring new places inspires
+              my creativity and helps me see the world from different
+              perspectives — which I bring into my work. Whether it’s solving a
+              tricky bug or discovering a new city, I love challenges that help
+              me grow.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links">Experience</p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  Web app development
+                </li>
+                <li>
+                  <span>C++ with DSA</span><br />
+                  Data Structures and Algorithms
+                </li>
+                <li>
+                  <span>Python Programming</span><br />
+                  Automation and Scripting
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>2019-2021</span><br />
+                  10th from DAV
+                </li>
+                <li>
+                  <span>2021-2023</span><br />
+                  12th from DAV
+                </li>
+                <li><span>2023-2027</span><br />B.Tech from KIIT</li>
+                <!-- <li><span></span><br>Designing Web/App interfaces</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services" class="services">
+      <div class="container">
+        <h1 class="sub-title"><span>My</span> <span>Services.</span></h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code" id="fa1"></i>
+            <h2>Web Design</h2>
+            <p>
+              I design responsive websites that reflect your vision. My focus is
+              on performance, creativity, and engaging experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple" id="fa2"></i>
+            <h2>UI/UX design</h2>
+            <p>
+              I create clean interfaces with thoughtful user flows. My goal is
+              making digital products intuitive, accessible, and enjoyable.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store" id="fa3"></i>
+            <h2>App Design</h2>
+            <p>
+              I design custom applications that are simple yet powerful. My
+              focus remains on usability, innovation, and seamless interaction.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------portfolio---------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title"><span>My</span> <span>Work.</span></h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="tic tac.jpeg" />
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+              <p>
+                Tic Tac Toe challenges players to outsmart each other by forming
+                three in a row before their opponent.
+              </p>
+              <a href="https://luv12-bit.github.io/Tic-Tac-Toe/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="restaurant.jpeg" />
+            <div class="layer">
+              <h3>Vino & Pasta</h3>
+              <p>
+               Vino & Pasta is an Italian restaurant serving authentic flavors with a perfect pairing of wine and hearty pasta.
+              </p>
+              <a href="https://luv12-bit.github.io/Vino-Pasta/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images.jpeg" />
+            <div class="layer">
+              <h3>Guess a Number?</h3>
+              <p>
+               Guess a Number is a simple game where players try to find the hidden number by making smart guesses.
+              </p>
+              <a href="https://luv12-bit.github.io/GuessingNumber/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+      </div>
+    </div>
+
+    <!-- ----------contact--------- -->
+     <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title"><span>Contact </span><span>Me</span></h1>
+            <p><i class="fa-solid fa-paper-plane"></i>luvmaken107@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9031799547</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/sypher.don/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://x.com/maken_luv72382"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/luv_maken/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/luv-maken/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="My Resume.pdf" download="" class="btn btn2" id="download-cv-btn">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2025 luv maken <i class="fa-solid fa-heart"></i>.</p>
+      </div>
+     </div>
+    <script src="script.js"></script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzmUHDslSstjGuINID6VmfaQZZiCFwg0lj2D4kpYECGgTg6ZaDg2Xomf1kRzsYoRK_S/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
